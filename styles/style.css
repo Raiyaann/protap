@@ -269,7 +269,7 @@ main{
 }
 .grid-box{
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 25px;
+    margin-left: 15px;
     margin-right: auto;
 }
 .frame {
@@ -285,6 +285,12 @@ main{
 }
 .photo-album{
     grid-template-columns: repeat(2, 1fr);
+}
+.social-media-container{
+    padding: 5px 30px;
+}
+.fa-facebook, .fa-instagram-square, .fa-twitter{
+    font-size: 20px;
 }
     
 }
