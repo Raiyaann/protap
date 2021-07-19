@@ -1,0 +1,282 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(22, 19, 19)
+}
+
+/*--------------------------------------------------- header --------------------------------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient( rgb(216, 154, 38), rgb(219, 26, 26));
+    align-items: center;
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+nav .fa-user{
+color: white;
+font-size: 30px;
+
+}
+nav img{
+    width: 40px;
+    margin-left: 20px;
+}
+
+/*------------------------------------------------- section one ---------------------------------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    
+    margin-top: 20px;
+}
+.logo{
+    text-align: center;
+    margin-top: 20px;
+}
+.logo img{
+    width: 80px;
+}
+
+.red{
+    color: red;
+}
+.top-part, .second-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-image img{
+    width: 450px;
+    
+}
+.intro , .self{
+    margin-left: 20px;
+    margin-right: 50px;
+   width: 50%;
+    
+}
+h1{
+    font-size: 50px;
+}
+.intro p{
+    font-size: 18px;
+    font-weight: 500;
+    width: 80%;
+    
+}
+.link-button{
+    display: inline-block;
+    text-decoration: none;
+    background-image:  linear-gradient(#eed76f,#ECAF44,#FB8122);
+    padding:7px 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.link-button:hover{
+    background: #2ecc71;
+}
+hr{
+    border: 1px solid lightgray;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.second-image img{
+    margin-bottom: -5px;
+
+}
+.info-container{
+    background-color: rgb(247, 248, 248);
+    width: 100%;
+    margin-top: 50px;
+    background-size: cover;
+    
+    
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+}
+.box{
+    Width: 300px; 
+    box-shadow:lightgrey 0px 0px 10px ;
+    border-radius: 10px;
+    padding:20px;
+}
+/* .box:hover{
+    border-color: #2ecc71;
+} */
+.banner{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* ------------
+ Album Section
+  ---------- */
+  .album-container{
+    background-color: rgb(247, 248, 248);
+    width: 100%;
+    margin-top: 50px;
+    background-size: cover;
+    overflow-x: hidden;
+    
+    
+    
+  }
+  .photo-album{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;
+      margin-left: 10px;
+      width: 100%;
+    }
+  .frame{
+    width: 270px;
+    height: 270px;
+    border: 2px solid #2ecc71;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .photo img{
+      width: 100%;
+  }
+.photo-detail{
+    position: absolute;
+    display: none;
+    top:0;
+    width: 300px;
+    text-align: center;
+}
+.photo-detail h4{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    color: black;
+    font-size: 20px;
+}
+.frame:hover .photo-detail{
+    display: block;
+    font-weight: 600;
+    background-color: rgba(151, 227, 246, 0.5);
+    background-size: 100%;
+}
+.frame:hover .photo{
+    transform: scale(1.2) ;
+}
+.social-media{
+    background-color: white;
+    width: 100%;
+
+}
+.social-media h3{
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.social-media-container{
+   display: flex;
+   align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 20px rgb(129, 132, 134);
+    border-radius: 3px;
+    padding: 10px 30px;
+}
+.fa-facebook, .fa-instagram-square, .fa-twitter{
+    font-size: 30px;
+    color: black;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.917);
+    color: azure;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media only screen and (max-width:400px) {
+body{
+    overflow-x: hidden;
+}
+
+    .top-part, .second-part{
+    display: flex;
+    flex-direction: column;
+}
+.intro, .self {
+    margin-left: 40px;
+    margin-right: 50px;
+    width: 90%;
+}
+.top-image img {
+    width: 370px;
+}
+.second-image img {
+    margin-bottom: 15px;
+    margin-left: 200px;
+}
+.link-button{
+    margin-bottom: 15px;
+}
+.grid-box{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 25px;
+    margin-right: auto;
+}
+.frame {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #2ecc71;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.photo-album{
+    grid-template-columns: repeat(2, 1fr);
+}
+    
+}
